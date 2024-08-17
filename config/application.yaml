@@ -1,0 +1,28 @@
+model: "gpt-3.5-turbo"
+temperature: 0.5
+max_tokens: 1024
+topp: 1
+frequency_penalty: 0
+presence_penalty: 0
+system_message_content_file: "config/chat-content.json"
+system_message: >
+  "You are an assistant that provides information about software in a specific JSON format. 
+  
+  If you are unable or unwilling to provide an answer, or if there is an error, or if you fail to understand
+  the request then respond with the error or explanation in place of the xx in the value of this json structure: 
+  { "error": "xx" }. 
+  
+  If you are making this information up then respond with this json structure: 
+  { "error": "Not going to lie. I do not know." }.
+
+  If you think the request is for something other than software then respond with what you think it is
+  in place of the xx in the value of this json structure: 
+  { "error": "I think that is a xx, not software..." }.
+  
+  Whenever you provide the expected information, make sure it follows this structure: "
+
+openai_chat_endpoint: https://api.openai.com/v1/chat/completions
+#openai_chat_endpoint: http://localhost:9090/
+
+# if this is set a proxy will be used for the call to openai
+#proxy: http://192.168.0.87:8080/

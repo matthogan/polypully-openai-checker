@@ -1,0 +1,58 @@
+{
+  "name": "cmd.exe",
+  "description": "cmd.exe is the command-line interpreter for the Windows operating system.",
+  "benefits": "Allows users to interact with the operating system through text commands, perform various tasks, and automate tasks through scripts.",
+  "categories": ["System Utility", "Command Line Interface"],
+  "alternatives": [
+    {
+      "name": "PowerShell",
+      "description": "PowerShell is a more advanced command-line shell and scripting language designed for system administration.",
+      "url": "https://docs.microsoft.com/en-us/powershell/"
+    },
+    {
+      "name": "Cygwin",
+      "description": "Cygwin is a Unix-like environment and command-line interface for Microsoft Windows.",
+      "url": "https://www.cygwin.com/"
+    }
+  ],
+  "classification": {
+    "type": "Application",
+    "subcategory": "System Utility"
+  },
+  "usage": {
+    "environment": ["Corporate", "Home", "Educational"],
+    "instructions": "Users can type commands to perform various tasks.",
+    "age": "No specific age requirement.",
+    "platforms": ["Windows"],
+    "languages": ["English"],
+    "license": "Proprietary",
+    "updates": "Updates are typically included with Windows updates.",
+    "installation": "Pre-installed with Windows.",
+    "uninstallation": "N/A",
+    "features": ["Command-line interface", "Scripting capabilities"],
+    "limitations": ["Limited graphical interface"]
+  },
+  "integration": [],
+  "requirements": {
+    "minimum": "Compatible Windows operating system",
+    "recommended": "N/A"
+  },
+  "safety": {
+    "corporate": {
+      "safe": true,
+      "description": "Cmd.exe is safe for corporate use as it provides direct access to system functions for administrators."
+    },
+    "home": {
+      "safe": true,
+      "description": "Cmd.exe is safe for home use for users familiar with command-line interfaces."
+    },
+    "school": {
+      "safe": true,
+      "description": "Cmd.exe is safe for school use for educational purposes and learning command-line operations."
+    }
+  },
+  "complexity": {
+    "score": 5,
+    "description": "Cmd.exe is considered moderately complex due to the need to remember and correctly type commands."
+  }
+}
