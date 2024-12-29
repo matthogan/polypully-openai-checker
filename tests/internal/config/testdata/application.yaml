@@ -1,13 +1,5 @@
 server:
   port: 50051
-cache:
-  enabled: true
-  host: "127.0.0.1:11211"
-  key_hash_algorithm: "sha256"
-metrics:
-    enabled: true
-    local_host: "127.0.0.1:9091"
-    context_root: "/metrics"
 tls:
   enabled: true
   self_signed: true
@@ -21,7 +13,7 @@ openai:
   topp: 1
   frequency_penalty: 0
   presence_penalty: 0
-  system_message_content_file: "config/chat-content.json"
+  system_message_content_file: "testdata/chat-content.json"
   system_message: >
     "You are an assistant that provides information about software in a specific JSON format. 
     

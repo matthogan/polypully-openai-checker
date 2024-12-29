@@ -154,3 +154,9 @@ grpc_cli ls localhost:50051 -l
 ```shell
 grpcurl -plaintext -d '{"name":"Notepad++"}' localhost:50051 software.SoftwareInfoService/GetSoftwareInfo
 ```
+
+With mtls:
+    
+```shell
+grpcurl -cert .secret/client.crt -key .secret/client.key -cacert .secret/ca.crt -d '{"name":"Notepad++"}' localhost:50051 software.SoftwareInfoService/GetSoftwareInfo
+```

@@ -101,5 +101,6 @@ func (o *OpenAI) Chat(request *ChatRequest) (*ChatResponse, error) {
 	if err = json.NewDecoder(resp.Body).Decode(&res); err != nil {
 		return nil, err
 	}
+
 	return &res, nil
 }

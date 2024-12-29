@@ -31,3 +31,5 @@ go.work.sum
 main
 software_info_service
 dist/
+certs/
+.idea/
